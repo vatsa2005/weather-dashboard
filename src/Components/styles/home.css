@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+.home {
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  animation: appear 1s ease-in-out;
+  font-size: 2.5vmin;
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.home p {
+  margin: 0;
+}
+
+.home__sidebar {
+  max-height: 100vh;
+  padding-block: 15px;
+  padding-inline: 5px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-right: 1.5px solid;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(251, 247, 247, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.home__sidebar__thermometer .MuiSvgIcon-root {
+  font-size: 3vmin;
+}
+
+.home__sidebar__search {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.home__sidebar__search_bar {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__sidebar__search_bar input {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  font-size: 3vmin;
+}
+
+.home__sidebar__search input:focus {
+  outline: none;
+}
+
+.home__sidebar__search_results {
+  z-index: 1;
+  padding-inline: 10px;
+  padding-block: 5px;
+}
+
+.home__sidebar__thermometer,
+.home__sidebar__search_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+
+.home__sidebar__info {
+  padding-block: 20px;
+}
+
+.home__sidebar__info__temperature {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.home__sidebar__info__temperature h1 {
+  margin: 0;
+  padding-block: 0.2em;
+}
+
+.home__sidebar__info__temperature__degree {
+  height: 100%;
+}
+
+.home__sidebar__info__temperature__degree .MuiSvgIcon-root {
+  font-size: 2vmin;
+}
+
+.home__sidebar__info__wind {
+  font-size: 1.5vmin;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.home__sidebar__sun {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 2vmin;
+  padding-block: 10px;
+}
+
+.home__sidebar__graph {
+  animation: appear 1s ease-in-out;
+  padding-block: 10px;
+  display: grid;
+  grid-template-columns: fit-content 1fr;
+  grid-template-rows: 1fr fit-content;
+}
+
+.home__main {
+  padding: 30px;
+  max-height: 100vh;
+}
+
+.home__sidebar__graph__legend_y p,
+.home__sidebar__graph__legend_x p {
+  margin: 0;
+  padding: 0;
+  font-size: 2vmin;
+}
+.home__sidebar__graph__legend_y {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__sidebar__graph__legend_x {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/3;
+}
+
+.home__sidebar__moon {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2vmin;
+  padding-block: 20px;
+}
+
+.home__sidebar__timezone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 20px;
+}
+
+.home__sidebar__lat_and_lon {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2vmin;
+  padding-block: 20px;
+}
+
+.home__main__location_details {
+  font-size: 2vmin;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: max-content;
+}
+
+.home__main {
+  display: grid;
+  grid-template-rows: 0.2fr 1fr;
+}
+
+.home__main__location_details__date {
+  text-transform: capitalize;
+}
+
+.home__main__weather_details p {
+  font-size: 2vmin;
+}
+
+.home__main__weather_details h1 {
+  padding-inline: 20px;
+  font-size: 8vmin;
+  text-transform: capitalize;
+}
+
+.home__main__weather_details__avgtemp {
+  display: flex;
+}
+
+.home__main__weather_details__avgtemp .MuiSvgIcon-root {
+  font-size: 1.5vmin;
+  height: 50%;
+}
+
+.home__main__weather_details__avgtemp__degree {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home__main__weather_details__avgtemp h3 {
+  margin: 0;
+}
+
+.home__main__weather_details__weather_desc {
+  padding-block: 15px;
+  line-height: 1.5em;
+}
+
+.home__main__hourly_forecast {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-block: 25px;
+}
+
+.home__main__hourly_forecast__hour__temp {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.home__main__hourly_forecast__hour__temp p {
+  font-size: 2.5vmin;
+}
+
+.home__main__hourly_forecast__hour__temp h4 {
+  margin-block: 1em;
+}
+
+.temp .MuiSvgIcon-root {
+  height: 100%;
+  font-size: 1.5vmin;
+}
+
+.home__main__hourly_forecast__hour__rain {
+  padding-block: 3px;
+}
+
+.home__main__hourly_forecast__hour__rain p {
+  padding-block: 2px;
+  font-size: 1.5vmin;
+}
+
+.home__main__hourly_forecast__hour__humidity p {
+  padding-block: 5px;
+  font-size: 1.5vmin;
+}
+
+.home__main__hourly_forecast__hour__condition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__main__hourly_forecast__prev,
+.home__main__hourly_forecast__next {
+  justify-self: center;
+  align-self: center;
+}
+
+.home__main__hourly_forecast__prev {
+  justify-self: flex-start;
+}
+
+.home__main__hourly_forecast__next .MuiSvgIcon-root,
+.home__main__hourly_forecast__prev .MuiSvgIcon-root {
+  font-size: 4vmin;
+}
+
+.home__main__hourly_forecast__hour {
+  padding-inline: 10px;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 850px) {
+  .home__sidebar__sun,
+  .home__sidebar__moon,
+  .home__sidebar__lat_and_lon {
+    display: block;
+  }
+  .home__sidebar__sun p,
+  .home__sidebar__moon p,
+  .home__sidebar__lat_and_lon p {
+    padding-block: 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home__main__location_details {
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+  }
+  .home__main__location_details__date,
+  .home__main__location_details__rain {
+    height: fit-content;
+  }
+  .home__sidebar__info__wind {
+    display: block;
+  }
+  .home__sidebar__info__wind p {
+    padding-block: 5px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .home__main {
+    padding-inline: 5px;
+  }
+}
+
+/*animation classes*/
+.animate {
+  animation: appear 1s ease-in-out;
+}
+
+/*font color*/
+
+.black {
+  color: #000000;
+  border-color: #000000;
+  cursor: url("../assets/cursor-black.png"), auto;
+}
+.white {
+  color: #ffffff;
+  border-color: #ffffff;
+  cursor: url("../assets/cursor-white.png"), auto;
+}
+
+/*img classes*/
+
+.blizzard {
+  background-image: url("../assets/blizzard.jpg");
+}
+.blizzard-mobile {
+  background-image: url("../assets/blizzard-mobile.jpg");
+}
+.cloudy {
+  background-image: url("../assets/cloudy.jpg");
+}
+.cloudy-mobile {
+  background-image: url("../assets/cloudy-mobile.jpg");
+}
+.drizzle {
+  background-image: url("../assets/drizzle.jpg");
+}
+.drizzle-mobile {
+  background-image: url("../assets/drizzle-mobile.jpg");
+}
+.fog {
+  background-image: url("../assets/fog.jpg");
+}
+.fog-mobile {
+  background-image: url("../assets/fog-mobile.jpg");
+}
+.heavy-rain {
+  background-image: url("../assets/heavy-rain.jpg");
+}
+.heavy-rain-mobile {
+  background-image: url("../assets/heavy-rain-mobile.jpg");
+}
+.mist {
+  background-image: url("../assets/mist.jpg");
+}
+.mist-mobile {
+  background-image: url("../assets/mist-mobile.jpg");
+}
+.rain {
+  background-image: url("../assets/rain.jpg");
+}
+.rain-mobile {
+  background-image: url("../assets/rain-mobile.jpg");
+}
+.sleet {
+  background-image: url("../assets/sleet.jpg");
+}
+.sleet-mobile {
+  background-image: url("../assets/sleet-mobile.jpg");
+}
+.snow {
+  background-image: url("../assets/snow.jpg");
+}
+.snow-mobile {
+  background-image: url("../assets/snow-mobile.jpg");
+}
+.sunny {
+  background-image: url("../assets/sunny.jpg");
+}
+.sunny-mobile {
+  background-image: url("../assets/sunny-mobile.jpg");
+}
+.thunder {
+  background-image: url("../assets/thunder.jpg");
+}
+.thunder-mobile {
+  background-image: url("../assets/thunder-mobile.jpg");
+}
+
+/*keyframes*/
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
