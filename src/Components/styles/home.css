@@ -333,81 +333,81 @@
 .black {
   color: #000000;
   border-color: #000000;
-  cursor: url("../assets/cursor-black.png"), auto;
+  cursor: url("../../../public/assets/cursor-black.png"), auto;
 }
 .white {
   color: #ffffff;
   border-color: #ffffff;
-  cursor: url("../assets/cursor-white.png"), auto;
+  cursor: url("../../../public/assets/cursor-white.png"), auto;
 }
 
 /*img classes*/
 
 .blizzard {
-  background-image: url("../assets/blizzard.jpg");
+  background-image: url("../../../public/assets/blizzard.jpg");
 }
 .blizzard-mobile {
-  background-image: url("../assets/blizzard-mobile.jpg");
+  background-image: url("../../../public/assets/blizzard-mobile.jpg");
 }
 .cloudy {
-  background-image: url("../assets/cloudy.jpg");
+  background-image: url("../../../public/assets/cloudy.jpg");
 }
 .cloudy-mobile {
-  background-image: url("../assets/cloudy-mobile.jpg");
+  background-image: url("../../../public/assets/cloudy-mobile.jpg");
 }
 .drizzle {
-  background-image: url("../assets/drizzle.jpg");
+  background-image: url("../../../public/assets/drizzle.jpg");
 }
 .drizzle-mobile {
-  background-image: url("../assets/drizzle-mobile.jpg");
+  background-image: url("../../../public/assets/drizzle-mobile.jpg");
 }
 .fog {
-  background-image: url("../assets/fog.jpg");
+  background-image: url("../../../public/assets/fog.jpg");
 }
 .fog-mobile {
-  background-image: url("../assets/fog-mobile.jpg");
+  background-image: url("../../../public/assets/fog-mobile.jpg");
 }
 .heavy-rain {
-  background-image: url("../assets/heavy-rain.jpg");
+  background-image: url("../../../public/assets/heavy-rain.jpg");
 }
 .heavy-rain-mobile {
-  background-image: url("../assets/heavy-rain-mobile.jpg");
+  background-image: url("../../../public/assets/heavy-rain-mobile.jpg");
 }
 .mist {
-  background-image: url("../assets/mist.jpg");
+  background-image: url("../../../public/assets/mist.jpg");
 }
 .mist-mobile {
-  background-image: url("../assets/mist-mobile.jpg");
+  background-image: url("../../../public/assets/mist-mobile.jpg");
 }
 .rain {
-  background-image: url("../assets/rain.jpg");
+  background-image: url("../../../public/assets/rain.jpg");
 }
 .rain-mobile {
-  background-image: url("../assets/rain-mobile.jpg");
+  background-image: url("../../../public/assets/rain-mobile.jpg");
 }
 .sleet {
-  background-image: url("../assets/sleet.jpg");
+  background-image: url("../../../public/assets/sleet.jpg");
 }
 .sleet-mobile {
-  background-image: url("../assets/sleet-mobile.jpg");
+  background-image: url("../../../public/assets/sleet-mobile.jpg");
 }
 .snow {
-  background-image: url("../assets/snow.jpg");
+  background-image: url("../../../public/assets/snow.jpg");
 }
 .snow-mobile {
-  background-image: url("../assets/snow-mobile.jpg");
+  background-image: url("../../../public/assets/snow-mobile.jpg");
 }
 .sunny {
-  background-image: url("../assets/sunny.jpg");
+  background-image: url("../../../public/assets/sunny.jpg");
 }
 .sunny-mobile {
-  background-image: url("../assets/sunny-mobile.jpg");
+  background-image: url("../../../public/assets/sunny-mobile.jpg");
 }
 .thunder {
-  background-image: url("../assets/thunder.jpg");
+  background-image: url("../../../public/assets/thunder.jpg");
 }
 .thunder-mobile {
-  background-image: url("../assets/thunder-mobile.jpg");
+  background-image: url("../../../public/assets/thunder-mobile.jpg");
 }
 
 /*keyframes*/
