@@ -164,14 +164,14 @@ function Home() {
       if (geolocationSupported && isMobile) {
         try {
           const res = await fetch(
-            `http://api.weatherapi.com/v1/current.json?key=081ab152c18c423b98153018240107&q=${position.lat},${position.long}`
+            `https://api.weatherapi.com/v1/current.json?key=081ab152c18c423b98153018240107&q=${position.lat},${position.long}`
           );
           const data = await res.json();
           setWeatherData((prev) => {
             return data;
           });
           const forecastRes = await fetch(
-            `http://api.weatherapi.com/v1/forecast.json?key=081ab152c18c423b98153018240107&q=${position.lat},${position.long}&alerts=yes&aqi=yes`
+            `https://api.weatherapi.com/v1/forecast.json?key=081ab152c18c423b98153018240107&q=${position.lat},${position.long}&alerts=yes&aqi=yes`
           );
           const forecastData = await forecastRes.json();
           setForcastData((prev) => {
@@ -183,14 +183,14 @@ function Home() {
       } else {
         try {
           const res = await fetch(
-            `http://api.weatherapi.com/v1/current.json?key=081ab152c18c423b98153018240107&q=${city}`
+            `https://api.weatherapi.com/v1/current.json?key=081ab152c18c423b98153018240107&q=${city}`
           );
           const data = await res.json();
           setWeatherData((prev) => {
             return data;
           });
           const forecastRes = await fetch(
-            `http://api.weatherapi.com/v1/forecast.json?key=081ab152c18c423b98153018240107&q=${city}&alerts=yes&aqi=yes`
+            `https://api.weatherapi.com/v1/forecast.json?key=081ab152c18c423b98153018240107&q=${city}&alerts=yes&aqi=yes`
           );
           const forecastData = await forecastRes.json();
           setForcastData((prev) => {
@@ -261,7 +261,7 @@ function Home() {
     async function search() {
       try {
         const res = await fetch(
-          `http://api.weatherapi.com/v1/current.json?key=081ab152c18c423b98153018240107&q=${searchValue}`
+          `https://api.weatherapi.com/v1/current.json?key=081ab152c18c423b98153018240107&q=${searchValue}`
         );
         const data = await res.json();
         setSearchData((prev) => {
