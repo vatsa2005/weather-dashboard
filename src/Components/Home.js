@@ -48,6 +48,7 @@ function Home() {
   const [searchValue, setSearchValue] = useState("");
   const [searchData, setSearchData] = useState("");
   const [city, setCity] = useState("Chennai");
+  const [graphLineColor, setGraphLineColor] = useState("#76b7b2");
 
   const apiKey = process.env.REACT_APP_API_KEY;
 
@@ -61,6 +62,7 @@ function Home() {
         setWeatherDesc(
           `It's a beautiful day to be outside! Expect clear skies with sunshine. High temperatures will reach around ${forecastData?.forecast?.forecastday[0]?.day?.maxtemp_c} degrees Celsius. Light winds will keep things comfortable. Enjoy the sunshine!`
         );
+        setGraphLineColor("#f28e2c");
       } else if (localVal === "cloudy" || localVal === "overcast") {
         dim.w <= 600 ? setImg("cloudy-mobile") : setImg("cloudy");
         setFontColor("black");
@@ -371,6 +373,7 @@ function Home() {
                 {
                   data: graphData,
                   showMark: false,
+                  color: graphLineColor,
                 },
               ]}
               width={320}
