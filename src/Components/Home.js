@@ -367,6 +367,7 @@ function Home() {
               xAxis={[
                 {
                   data: graphX,
+                  scaleType: "point",
                 },
               ]}
               series={[
@@ -378,9 +379,12 @@ function Home() {
               ]}
               width={320}
               height={220}
+              bottomAxis={{
+                label: "Time",
+              }}
             />
             <div className="home__sidebar__graph__legend_x">
-              <p>Railway Time</p>
+              {/* <p>Time</p> */}
             </div>
           </div>
         )}
