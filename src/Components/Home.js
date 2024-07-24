@@ -382,6 +382,9 @@ function Home() {
               height={220}
               bottomAxis={{
                 label: "Time",
+                labelStyle: {
+                  color: fontColor,
+                },
               }}
             />
             <div className="home__sidebar__graph__legend_x">
