@@ -382,8 +382,11 @@ function Home() {
               height={220}
               bottomAxis={{
                 label: "Time",
-                labelStyle: {
-                  color: fontColor,
+              }}
+              sx={{
+                "& .MuiChartsAxis-bottom .MuiChartsAxis-label": {
+                  strokeWidth: "0.5",
+                  fill: fontColor,
                 },
               }}
             />
