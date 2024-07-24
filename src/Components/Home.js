@@ -55,6 +55,7 @@ function Home() {
   function bgImg() {
     weatherData?.current?.condition?.text?.split(" ")?.map((val, ind) => {
       let localVal = val.toLowerCase();
+      setGraphLineColor("#76b7b2");
       if (localVal === "sunny" || localVal === "clear") {
         dim.w <= 600 ? setImg("sunny-mobile") : setImg("sunny");
         setFontColor("black");
